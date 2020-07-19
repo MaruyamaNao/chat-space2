@@ -59,6 +59,19 @@
       border-bottom: 1px solid #eeeeee;
       height: 100px;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 40px;
+
+      &--left{
+        font-size: 20px;
+        margin-top: 35px;
+      }
+      & .member{
+        font-size: 9px;
+        color: #999999;
+        margin-top: 15px;
+      }
     }
 
     &__footer{
