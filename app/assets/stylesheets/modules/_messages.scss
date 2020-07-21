@@ -53,7 +53,7 @@
     height: 100vh;
     width: calc(100% - 300px);
 
-    & .header{
+    & .main-header{
       background-color: #ffffff;
       border-bottom: 1px solid #eeeeee;
       height: 100px;
@@ -84,7 +84,7 @@
       }
     }
 
-    & .message{
+    & .main-message{
       margin: 35px 40px 11px;
 
       & .message-name{
@@ -105,7 +105,7 @@
       }
     }
 
-    & .footer{
+    & .main-footer{
       background-color: #d2d2d2;
       height: 90px;
       position: fixed;
