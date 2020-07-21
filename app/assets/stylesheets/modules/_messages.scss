@@ -114,22 +114,42 @@
       display: flex;
       width: calc(100% - 300px);
 
-      .input-box{
-        background-color: #fafafa;
-        height: 50px;
-        line-height: 50px;
-        padding: 0px 10px;
+      & .input-box{
+        display: flex;
         width: 100%;
-        margin-right: 15px;
-      }
-    
-      & .send{
-        background-color: #38aef0;
-        height: 50px;
         line-height: 50px;
-        width: 100px;
-        color: #ffffff;
-        text-align:center;
+
+        & .input-text{
+          position: relative;
+          display: flex;
+          width: 100%;
+
+          & .form-text{
+            width: 100%;
+            padding-left: 10px;
+            border: none;
+            background-color: #fafafa;
+          }
+
+          & .form-label{
+            position: absolute;
+            font-size: 1.3rem;
+            right: 10px;
+
+            & .form-file{
+              display: none;
+            }
+          }
+        }
+
+        & .form-send{
+          border: none;
+          background-color: #38aef0;
+          width: 100px;
+          color: #ffffff;
+          text-align: center;
+          margin-left: 15px;
+        }
       }
     }
   }

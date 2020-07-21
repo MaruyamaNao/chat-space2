@@ -17,6 +17,9 @@
 
   .main-footer
     .input-box
-      = icon('fas', 'image')
-      %input{type: "file"}
-    .send
+      .input-text
+        %input{type: "text", placeholder: "メッセージを入力", class:"form-text"}
+        %label{class: "form-label"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "form-file"}
+      %input{type: "submit", value: "送信", class: "form-send"}
