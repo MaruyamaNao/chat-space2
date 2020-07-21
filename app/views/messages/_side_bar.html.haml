@@ -1,14 +1,15 @@
 .side
-  .side__header
+  .side-header
     ユーザー名
-    .side__header--right
+    .header-icon
       = link_to "#" do
         = icon('fa', 'edit', class: 'icon' )
         %span<>
       = link_to "#" do
         = icon('fa', 'cog', class: 'icon' )
-  .side__group
-    .side__group--name
+
+  .side-main
+    .group-name
       グループ名
-    .side__group--message
+    .group-message
       メッセージはまだありません
