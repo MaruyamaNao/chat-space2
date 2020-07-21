@@ -1,13 +1,14 @@
-.wrapper__side__header
-  ユーザー名
-  .wrapper__side__header__right
-    = link_to "#" do
-      = icon('fa', 'edit', class: 'icon' )
-      %span<>
-    = link_to "#" do
-      = icon('fa', 'cog', class: 'icon' )
-.wrapper__side__group
-  .wrapper__side__group--name
-    グループ名
-  .wrapper__side__group--message
-    メッセージはまだありません
+.side
+  .side__header
+    ユーザー名
+    .side__header--right
+      = link_to "#" do
+        = icon('fa', 'edit', class: 'icon' )
+        %span<>
+      = link_to "#" do
+        = icon('fa', 'cog', class: 'icon' )
+  .side__group
+    .side__group--name
+      グループ名
+    .side__group--message
+      メッセージはまだありません
