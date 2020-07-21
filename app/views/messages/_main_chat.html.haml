@@ -1,0 +1,25 @@
+.main
+  .main-header
+    .group-name
+      グループ名
+      .group-member
+        member：name
+    .group-edit
+      Edit
+
+  .main-message
+    .message-name
+      名前
+      .message-date
+        2020/07/20
+    .message-text
+      おはよう
+
+  .main-footer
+    .input-box
+      .input-text
+        %input{type: "text", placeholder: "メッセージを入力", class:"form-text"}
+        %label{class: "form-label"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "form-file"}
+      %input{type: "submit", value: "送信", class: "form-send"}
