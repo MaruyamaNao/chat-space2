@@ -9,7 +9,9 @@
         = icon('fa', 'cog', class: 'icon' )
 
   .side-main
-    .group-name
-      グループ名
-    .group-message
-      メッセージはまだありません
+    - current_user.groups.each do |group|
+      = link_to '#' do
+        .group-name
+          = group.name
+        .group-message
+          メッセージはまだありません
