@@ -15,11 +15,12 @@
     .message-text
       おはよう
 
-  .main-footer
-    .input-box
-      .input-text
-        %input{type: "text", placeholder: "メッセージを入力", class:"form-text"}
-        %label{class: "form-label"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "form-file"}
-      %input{type: "submit", value: "送信", class: "form-send"}
+  = form_for [@group, @message] do |f|
+    .main-footer
+      .input-box
+        .input-text
+          = f.text_field :content, placeholder: "メッセージを入力", class: "form-text"
+          = f.label :image, class: "form-label" do
+            = icon('fas', 'image')
+            = f.file_field :image, class: "form-file"
+        = f.submit value: "送信", class: "form-send"
