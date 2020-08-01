@@ -8,12 +8,7 @@
       Edit
 
   .main-message
-    .message-name
-      名前
-      .message-date
-        2020/07/20
-    .message-text
-      おはよう
+    = render @messages
 
   = form_for [@group, @message] do |f|
     .main-footer
