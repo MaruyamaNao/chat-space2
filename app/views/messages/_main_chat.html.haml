@@ -1,9 +1,11 @@
 .main
   .main-header
     .group-name
-      グループ名
+      = @group.name
       .group-member
-        member：name
+        member：
+        - @group.users.each do |user|
+          = user.name
     .group-edit
       Edit
 
