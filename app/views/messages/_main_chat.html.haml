@@ -7,8 +7,9 @@
         member：
         - @group.users.each do |user|
           = user.name
-    .group-edit
-      Edit
+    = link_to edit_group_path(@group.id) do
+      .group-edit
+        Edit
 
   .main-message
     = render @messages
