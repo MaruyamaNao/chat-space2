@@ -9,12 +9,11 @@ a{
 
 .wrapper{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
 
   .side{
     background-color: #2f3e51;
-    height: 100vh;
     width: 300px;
     color: #ffffff;
     
@@ -91,6 +90,7 @@ a{
 
     & .main-message{
       margin: 35px 40px 11px;
+      padding-bottom: 90px;
 
       & .message-name{
         font-size: 16px;
