@@ -1,25 +1,25 @@
 .main
   .main-header
     .group-name
-      グループ名
+      グループ名：
+      = @group.name
       .group-member
-        member：name
-    .group-edit
-      Edit
+        member：
+        - @group.users.each do |user|
+          = user.name
+    = link_to edit_group_path(@group.id) do
+      .group-edit
+        Edit
 
   .main-message
-    .message-name
-      名前
-      .message-date
-        2020/07/20
-    .message-text
-      おはよう
+    = render @messages
 
-  .main-footer
-    .input-box
-      .input-text
-        %input{type: "text", placeholder: "メッセージを入力", class:"form-text"}
-        %label{class: "form-label"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "form-file"}
-      %input{type: "submit", value: "送信", class: "form-send"}
+  = form_for [@group, @message] do |f|
+    .main-footer
+      .input-box
+        .input-text
+          = f.text_field :content, placeholder: "メッセージを入力", class: "form-text"
+          = f.label :image, class: "form-label" do
+            = icon('fas', 'image')
+            = f.file_field :image, class: "form-file"
+        = f.submit value: "送信", class: "form-send"
