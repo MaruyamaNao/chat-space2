@@ -11,6 +11,7 @@ a{
   height: 100%;
   width: 100vw;
   display: flex;
+  background-color: #fafafa;
 
   .side{
     background-color: #2f3e51;
@@ -55,7 +56,6 @@ a{
   }
 
   .main{
-    background-color: #fafafa;
     width: 100%;
 
     & .main-header{
