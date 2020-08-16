@@ -4,6 +4,7 @@
 
 ### Association
 - has_many :groups_users
+- has_many :messages
 
 
 ## usersテーブル
@@ -12,7 +13,7 @@
 
 ### Association
 - has_many :groups_users
-
+- has_many :messages
 
 
 ## groups_usersテーブル
