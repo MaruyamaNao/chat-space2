@@ -23,7 +23,7 @@
 - belongs_to :user
 
 
-## massegeテーブル
+## massegesテーブル
 |Column|Type|Options|
 |------|----|-------|
 
