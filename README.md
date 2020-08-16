@@ -3,12 +3,17 @@
 |------|----|-------|
 
 ### Association
+- has_many :groups_users
+
 
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 
 ### Association
+- has_many :groups_users
+
+
 
 ## groups_usersテーブル
 |Column|Type|Options|
