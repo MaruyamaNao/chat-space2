@@ -3,14 +3,12 @@
 |------|----|-------|
 
 ### Association
-- belongs_to :massege
 
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 
 ### Association
-- belongs_to :message
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -28,3 +26,5 @@
 |------|----|-------|
 
 ### Association
+- belongs_to :message
+- belongs_to :massege
