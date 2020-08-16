@@ -26,5 +26,5 @@
 |------|----|-------|
 
 ### Association
-- belongs_to :message
-- belongs_to :massege
+- belongs_to :users
+- belongs_to :groups
